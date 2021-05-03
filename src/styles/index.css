@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, p {
+  padding: 0;
+  margin: 0;
+}
+
+button, input, select, option {
+  font-family: "Montserrat", sans-serif;
+}
+
+input, select {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(125deg, #42d4e3, #4991e5);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  transition: all 0.2s;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.user-list {
+  height: 100%;
+  width: 600px;
+  min-height: 320px;
+  padding: 16px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.navigation__search-panel {
+  display: flex;
+  align-items: center;
+}
+.navigation svg {
+  fill: #fff;
+  height: 25px;
+  width: auto;
+  margin-right: 5px;
+}
+.navigation__search {
+  padding: 8px;
+  color: white;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.2s;
+}
+.navigation__search:hover, .navigation__search:focus {
+  border-color: #fff;
+}
+.navigation__search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.navigation__filter {
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.list {
+  height: calc(100% - 40px);
+  overflow-x: auto;
+}
+
+.user {
+  background: #fff;
+  margin-top: 10px;
+  padding-top: 9.6px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.user__avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.user__main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.user__name {
+  font-size: 1.4rem;
+}
+.user__email {
+  font-size: 0.85rem;
+}
+.user__time-visited {
+  height: 100%;
+  font-size: 0.85rem;
+  padding-top: 8px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,39 @@
+.navigation{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  &__search-panel{
+    display: flex;
+    align-items: center;
+  }
+
+  svg{
+    fill: #fff;
+    height: 25px;
+    width: auto;
+    margin-right: 5px;
+  }
+
+  &__search{
+    padding: $padding;
+    color: white;
+    font-size: 1rem;
+    border-bottom: 1px solid transparentize(#fff, 0.5);
+    transition: all .2s;
+    &:hover, &:focus{
+      border-color: #fff;
+    }
+
+    &::placeholder{
+      color: transparentize(#fff, 0.5);
+    }
+  }
+
+  &__filter{
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+  }
+}
